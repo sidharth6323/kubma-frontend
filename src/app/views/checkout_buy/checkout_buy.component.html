@@ -1,0 +1,198 @@
+<div class="checkout-container">
+  <ngx-loading-bar></ngx-loading-bar>
+  <div class="container">
+    <div class="row">
+
+
+      <div class="checkout-content content_1" >
+        <div class="left-column" *ngIf="active_content==1">
+          <div class="carousel-container">
+            <div class="item item1" [ngClass]="{'active':activeItem==1 || item_completed.indexOf(1)>-1}">
+              <div class="header">
+                <div class="left">
+                  <span class="number">1</span>
+                  <span class="text">Your Purchase Order</span>
+                </div>
+                <div class="right">
+                  <span *ngIf="item_completed.indexOf(1)==-1">Property Name: AT201</span>
+                  <i class="fa fa-check" area-hidden="true" *ngIf="item_completed.indexOf(1)>-1"></i>
+                </div>
+              </div>
+              <div class="content" *ngIf="activeItem==1">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="item-inner item-inner-header">
+                      <span>Purchase Name</span>
+                      <span>Order Value</span>
+                    </div>
+                    <div class="item-inner">
+                      <span>32 Slices @ Rs 1,232</span>
+                      <span>Rs 39,424</span>
+                    </div>
+                    <div class="item-inner">
+                      <span>21 Slices @ Rs 1,289</span>
+                      <span>Rs 26,786</span>
+                    </div>
+                    <div class="item-inner">
+                      <span>Transfer Fee (0.75%)</span>
+                      <span>Rs 383</span>
+                    </div>
+                    <div class="item-inner item-inner-footer">
+                      <span>Order Total</span>
+                      <span>Rs 66,593</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 btn_container">
+                    <div class="button" (click)="activeItem=2;item_completed.push(1)">
+                      <span>Continue</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item item2" [ngClass]="{'active':activeItem==2|| item_completed.indexOf(2)>-1}">
+              <div class="header">
+                <div class="left">
+                  <span class="number">2</span>
+                  <span class="text">Your LLP Holding Documents</span>
+                </div>
+                <div class="right">
+                  <i class="fa fa-check" area-hidden="true" *ngIf="item_completed.indexOf(2)>-1"></i>
+                </div>
+              </div>
+              <div class="content" *ngIf="activeItem==2">
+                <div class="">
+                  <span class="bolder">
+                    Kindly follow the step-wise instructions mentioned below:
+                  </span>
+                  <ul>
+                    <li>
+                      Download LLP documents from the link given at the botton right corner of the tab.
+                    </li>
+                    <li>
+                      Your LLP documents are protected with password, which is same as your Kubma account password.
+                    </li>
+                    <li>
+                      Read the LLP holding documents carefully. This document gives you the legal rights to your share of the property.
+                    </li>
+                  </ul>
+                  <div class="button">
+                    <img src="assets/img/pdf_icon.png" />
+                    <span>Download File</span>
+                  </div>
+                  <div class="footer">
+                    <input type="checkbox" />
+                    <span>I have read the LLP holding document carefully</span>
+                    <div class="footer_btn" (click)="activeItem=3;item_completed.push(2)">
+                      Proceed Further
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item item3" [ngClass]="{'active':activeItem==3|| item_completed.indexOf(3)>-1}">
+              <div class="header">
+                <div class="left">
+                  <span class="number">3</span>
+                  <span class="text">Document Submission</span>
+                </div>
+                <div class="right">
+                  <i class="fa fa-check" area-hidden="true" *ngIf="item_completed.indexOf(3)>-1"></i>
+                </div>
+              </div>
+              <div class="content" *ngIf="activeItem==3">
+                <div >
+                  <span class="bolder">
+                    Kindly follow the step-wise instructions mentioned below:
+                  </span>
+                  <ul>
+                    <li>
+                      Digitally sign the LLP holding documents using your DSC token.
+                    </li>
+                    <li>
+                      If you have trouble using your DSC token, kindly download this software here to help you sign the documents.
+                    </li>
+                    <li>
+                      Upload the digitally signed LLP holding ducment at the link mentioned below.
+                    </li>
+                  </ul>
+                  <div class="upload">
+                    <div class="button">
+                      <img src="assets/img/pdf_icon.png" />
+                      <span>Upload File</span>
+                    </div>
+                    <span>Kubma Team will file the LLP documents with the Gov of India to give you fractional ownership legally..</span>
+                  </div>
+                  <div class="footer">
+                    <input type="checkbox" />
+                    <span>I have read the LLP holding document carefully</span>
+                    <div class="footer_btn" (click)="activeItem=4;item_completed.push(3)">
+                      Proceed Further
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item item4" [ngClass]="{'active':activeItem==4|| item_completed.indexOf(4)>-1}">
+              <div class="header">
+                <div class="left">
+                  <span class="number">4</span>
+                  <span class="text">OTP Verification</span>
+                </div>
+                <div class="right">
+                  <i class="fa fa-check" area-hidden="true" *ngIf="item_completed.indexOf(4)>-1"></i>
+                </div>
+              </div>
+              <div class="content" *ngIf="activeItem==4">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <span>Generated OTP on your registered mobile number</span>
+                    <input type="text" />
+                  </div>
+                  <div class="col-sm-6">
+                    <span>Your Account Password</span>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="button" (click)="active_content=2">
+                  Submit
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="left-column" *ngIf="active_content==2">
+          <div class="content_2">
+            <div class="header">
+              <img src="assets/img/transaction_complete.png" />
+              <h1>Transaction Complete</h1>
+            </div>
+            <p>
+              Kubma Team will file LLP holding documents with the Gov of India give you fractional ownership of the property legally.
+              This process usually takes upto 20 days. We will notify you immediately once the document has been successfully filed.
+              After the successful filing, the property ownership will be reflected in your online account.
+              In case the filing was unsuccessful, your funds will be credited back in to your account.
+            </p>
+            <div class="button">
+              <span>View your transactions history</span>
+            </div>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="section">
+            <img src="assets/img/secure_icon.png" />
+            <span>All payments are 100% secure & follow all legal guidelines laid down by Government of India.</span>
+          </div>
+          <br />
+          <span>Read about our Banking operations here</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <br /><br /><br /><br />
+</div>

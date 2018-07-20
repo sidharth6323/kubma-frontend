@@ -1,0 +1,30 @@
+body {
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+
+/*global*/
+.container {
+    width: 95%!important;
+    margin: 0 auto;
+}
+
+
+  .container-fluid
+  {
+    margin: 0 auto;
+    padding: 0;
+
+  }
+
+h5, h4,h3,h2,h1{
+
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 0;
+	overflow-x: hidden;
+}

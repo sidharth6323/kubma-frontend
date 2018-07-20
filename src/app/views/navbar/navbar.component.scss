@@ -1,0 +1,42 @@
+.nav-container
+{
+  nav
+  {
+    padding: 1.5% 4%;
+    text-align: center;
+    .icon-container
+    {
+      display: flex;
+      align-items: center;
+      .logo{margin-right: 5%;}
+    }
+    .right-menu-container
+    {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .info
+      {
+        margin: 0 2%;
+        display: flex;
+        align-items: center;
+        span{white-space: nowrap;margin-left: 4%;}
+      }
+    }
+  }
+  .sub-nav
+  {
+    background: #9B51E0;
+    color: white;
+    padding: 0.7% 0;
+    ul{
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      li{
+        padding:0 1.7%;
+      }
+    }
+  }
+}

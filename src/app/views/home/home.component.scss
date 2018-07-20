@@ -1,0 +1,165 @@
+.container {
+    width: 95%!important;
+    margin: 0 auto;
+}
+.home-container
+{
+  .section1{
+    background: #171A29;
+
+    .search-container
+    {
+      margin: 0 auto;
+      margin-top: 4%;
+      padding: 0.6% 0;
+      color: white;
+      border-bottom: 1.5px solid #d1d1d1;
+      width: 32%;
+      font-family: 'Oswald', sans-serif;
+      font-weight: lighter;
+      i
+      {
+        font-size: 2em;
+        transform:rotateY(180deg);
+      }
+      input
+      {
+        margin-left: 3%;
+        background: none;
+        width: 80%;
+        border:none;
+        padding-bottom: 1%;
+        font-size: 1.2em;
+        &::placeholder
+        {
+          color: #474b6d;
+        }
+        &:focus
+        {
+          outline: none;
+        }
+      }
+    }
+    .property-container
+    {
+      color: white;
+      margin: 4% 0;
+      display: flex;
+      overflow: scroll;
+      .property
+      {
+        margin: 0 2%;
+        .prop_img
+        {
+          width: 300px;
+          height: 224px;
+        }
+      }
+      span
+      {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.4em;
+        padding: 1% 0 1.2% 0%;
+        display: flex;
+        &.address
+        {
+          font-size: 1em;
+        }
+      }
+    }
+    .btn-container
+    {
+      text-align: center;
+      margin-bottom: 5%;
+      .learn_btn
+      {
+        background: white;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.2em;
+        border-radius: 20px;
+        padding: 0.5% 1.4%;
+        margin: 0 auto;
+        display: inline-block;
+      }
+    }
+    .map-section
+    {
+      display: flex;
+      font-family: 'Oswald', sans-serif;
+      color: white;
+      margin-bottom: 2%;
+      .map-container
+      {
+        margin-right: 12%;
+        img
+        {
+          width: 400px;
+        }
+      }
+      .text-container
+      {
+        .text{
+          margin-bottom: 25%;
+          h2
+          {
+            font-size: 1.8em;
+            margin-bottom: 4%;
+          }
+          p
+          {
+            font-size: 1.5em;
+          }
+        }
+        .btn-container
+        {
+          text-align: center;
+          margin-bottom: 5%;
+          color: black;
+          .button
+          {
+            background: white;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.2em;
+            border-radius: 20px;
+            padding: 1% 4%;
+            margin: 0 auto;
+            display: inline-flex;
+            align-items: center;
+            span{
+              margin-right: 10px;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-2
+  {
+    padding: 2% 0;
+    .section-header
+    {
+      margin-bottom: 3%;
+      span{font-size: 1.5em;}
+    }
+    .section-content
+    {
+      text-align: center;
+      .main-img img
+      {
+        width: 500px;
+        margin-bottom: 6%;
+      }
+      .function_container
+      {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .function img
+        {
+          width: 70%;
+        }
+      }
+    }
+  }
+}

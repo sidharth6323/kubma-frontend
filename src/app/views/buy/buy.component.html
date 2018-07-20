@@ -1,0 +1,157 @@
+<div class="buy-container">
+  <ngx-loading-bar></ngx-loading-bar>
+  <div class="buy-header">
+    <div class="container">
+      <div class="row header-inner">
+        <div class="left-section col-sm-3">
+          <div class="item">
+            <img src="assets/img/select_city.png" />
+          </div>
+        </div>
+        <div class="col-sm-7 right-section">
+            <h2>Select City Walk</h2>
+            <h3>Nike Store</h3>
+            <div class="buttons-container">
+              <div class="button">
+                <img src="assets/img/location_icon.png" />
+                <span>Locate Store</span>
+              </div>
+              <div class="button">
+                <img src="assets/img/360_icon.png" />
+                <span>View</span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="buy-content">
+    <div class="container">
+      <div class="row">
+        <div class="content-header">
+          <h2>Buy Property</h2>
+        </div>
+      </div>
+      <div class="content-inner">
+          <div class="left-section">
+            <div class="item">
+              <span class="left">Initial Slice Price</span>
+              <small>(May 2016)</small>
+              <span class="right price">Rs 1037</span>
+            </div>
+            <div class="item">
+              <span class="left">Current Slice Price</span>
+              <small>(Apr 2016)</small>
+              <span class="right price">Rs 1178</span>
+            </div>
+            <div class="item bordered">
+              <div class="table-container">
+                <div class="table-header">
+                  <div class="head active">
+                    Slices Available
+                  </div>
+                  <div class="head">
+                    Recent transactions
+                  </div>
+                </div>
+                <div class="table-content">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class="qty">
+                          Qty
+                        </th>
+                        <th class="price">
+                          Price
+                        </th>
+                        <th class="diff">
+                          % Diff from Initial Slice Price
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let i of slices_available">
+                        <td>
+                          {{i.qty}}
+                        </td>
+                        <td>
+                          {{i.price}}
+                        </td>
+                        <td>
+                          {{i.diff}}
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="table-footer">
+                    <span>Show More</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <small>Note: Slices are bought starting with the lowest available price</small>
+            </div>
+          </div>
+          <div class="middle-section">
+            <div class="header">
+              <span>Place your order</span>
+              <span>Funds Available: Rs 12,43,532</span>
+            </div>
+            <div class="content">
+              <div class="subhead">
+                <div class="item qty">
+                  <span>Quantity</span>
+                  <input type="number" min="10" value="10"/>
+                </div>
+                <div class="item">
+                  <small>Avg. Slice Price</small>
+                  <span>Rs 1,182</span>
+                </div>
+                <div class="item">
+                  <small>Order Total</small>
+                  <span>Rs 11,820</span>
+                </div>
+              </div>
+              <div class="content-inner">
+                <div class="item">
+                  <span class="left">10 Slices @ Rs 1,182</span>
+                  <span class="right">Rs 11,820</span>
+                </div>
+                <div class="item">
+                  <span class="left">Cost of slices</span>
+                  <span class="right">Rs 11,820</span>
+                </div>
+                <div class="item">
+                  <span class="left">Transaction Fees (0.75%)</span>
+                  <span class="right">Rs 886.5</span>
+                </div>
+                <div class="item total">
+                  <span class="left">Order Total</span>
+                  <span class="right">Rs 12,706</span>
+                </div>
+              </div>
+              <div class="footer">
+                <div class="check-container">
+                  <input type="checkbox" />
+                  <span>I agree to the transaction</span>
+                </div>
+                <div class="button confirm_btn" [routerLink]="['/buy/checkout']">
+                  <span>Confirm Order</span>
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-section">
+            <span>Have any Queries ?</span>
+            <div class="button">
+              <img src="assets/img/helpline_white.png" />
+              <span>Talk to our Executive</span>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <br /><br /><br /><br />
+</div>

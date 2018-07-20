@@ -1,0 +1,115 @@
+<div class="checkout-container">
+  <ngx-loading-bar></ngx-loading-bar>
+  <div class="container">
+    <div class="row">
+
+
+      <div class="checkout-content content_1" >
+        <div class="left-column" *ngIf="active_content==1">
+          <div class="carousel-container">
+            <div class="item item1" [ngClass]="{'active':activeItem==1 || item_completed.indexOf(1)>-1}">
+              <div class="header">
+                <div class="left">
+                  <span class="number">1</span>
+                  <span class="text">Your Sale Bid</span>
+                </div>
+                <div class="right">
+                  <span *ngIf="item_completed.indexOf(1)==-1">Property Name: AT201</span>
+                  <i class="fa fa-check" area-hidden="true" *ngIf="item_completed.indexOf(1)>-1"></i>
+                </div>
+              </div>
+              <div class="content" *ngIf="activeItem==1">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="item-inner item-inner-header">
+                      <span>Bid Name</span>
+                      <span>Order Value</span>
+                    </div>
+                    <div class="item-inner">
+                      <span>32 Slices @ Rs 1,232</span>
+                      <span>Rs 39,424</span>
+                    </div>
+                    <div class="item-inner">
+                      <span>21 Slices @ Rs 1,289</span>
+                      <span>Rs 26,786</span>
+                    </div>
+                    <div class="item-inner">
+                      <span>Transfer Fee (0.75%)</span>
+                      <span>Rs 383</span>
+                    </div>
+                    <div class="item-inner item-inner-footer">
+                      <span>Order Total</span>
+                      <span>Rs 66,593</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 btn_container">
+                    <div class="button" (click)="activeItem=2;item_completed.push(1)">
+                      <span>Place Your Bid</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="item item2" [ngClass]="{'active':activeItem==2|| item_completed.indexOf(2)>-1}">
+              <div class="header">
+                <div class="left">
+                  <span class="number">2</span>
+                  <span class="text">OTP Verification</span>
+                </div>
+                <div class="right">
+                  <i class="fa fa-check" area-hidden="true" *ngIf="item_completed.indexOf(2)>-1"></i>
+                </div>
+              </div>
+              <div class="content" *ngIf="activeItem==2">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <span>Generated OTP on your registered mobile number</span>
+                    <input type="text" />
+                  </div>
+                  <div class="col-sm-6">
+                    <span>Your Account Password</span>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="button" (click)="active_content=2">
+                  Submit
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="left-column" *ngIf="active_content==2">
+          <div class="content_2">
+            <div class="header">
+              <img src="assets/img/transaction_complete.png" />
+              <h1>Your Bid Successfully Placed</h1>
+            </div>
+            <p>
+              Your bid for selling  slices of the property AT602 has been successfully placed
+              <Br />
+              You can cancel your bid at any moment from the transactions history page
+              <Br />
+              Once a buyer has agreed to buy your slices, we will generate transfer documents which will be required to be digitally signed by you through your DSC token.
+            </p>
+            <div class="button">
+              <span>View your transactions history</span>
+            </div>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="section">
+            <img src="assets/img/secure_icon.png" />
+            <span>All payments are 100% secure & follow all legal guidelines laid down by Government of India.</span>
+          </div>
+          <br />
+          <span>Read about our Banking operations here</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <br /><br /><br /><br />
+</div>

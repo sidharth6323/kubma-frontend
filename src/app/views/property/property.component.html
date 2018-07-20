@@ -1,0 +1,722 @@
+<div class="property-container">
+  <ngx-loading-bar></ngx-loading-bar>
+  <div class="property-header">
+    <div class="container">
+      <div class="row header-inner">
+        <div class="left-section col-sm-5">
+          <div class="item">
+            <img src="assets/img/home_icon.png" />
+            <span>Select City Walk</span>
+          </div>
+          <div class="item investor">
+            <img src="assets/img/investor_icon.png" />
+            <span>48 Investors</span>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <div class="right-section">
+            <img src="assets/img/schedule_visit_icon.png" />
+            <span>Schedule a Visit</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="property-content">
+    <div class="section1">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7">
+            <div class="left-content">
+              <img src="assets/img/select_city.png" class="prop_img"/>
+              <div class="prop_info">
+                <div class="item">
+                  <h4>Net Annual Rental Yield</h4>
+                  <span>7.32%</span>
+                </div>
+                <div class="item">
+                  <h4>Historical Capital Appreciation</h4>
+                  <span>12.8%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="right-content">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="main">
+                    <div class="header">
+                      <div class="brand">
+                        <img src="assets/img/brand_icon_demo.png" />
+                        <span>Nike Store</span>
+                      </div>
+                      <div class="slice_owned">
+                        <img src="assets/img/slice_icon.png" />
+                        <span>163 Slices Owned</span>
+                      </div>
+                    </div>
+                    <div class="address">
+                      First Floor, Shop No. 19
+                    </div>
+                    <div class="button">
+                      <img src="assets/img/360_icon.png" />
+                      <span>View</span>
+                    </div>
+                    <div class="button">
+                      <img src="assets/img/location_icon.png" />
+                      <span>Location</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="sub">
+                  <div class="col-sm-6">
+                    <div class="item">
+                      <h2>Lowest Available Slice</h2>
+                      <span>Rs 1,208</span>
+                      <small>(1.6% above valuation)</small>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="item">
+                      <h2>Current Property Valuation</h2>
+                      <span>Rs 1,20,30,471</span>
+                      <small>(As of Apr ‘18)</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="button-container">
+                <div class="button purple" [routerLink]="['/buy']">
+                  <span>BUY SLICES</span>
+                  <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="button pink" [routerLink]="['/sell']">
+                  <span>SELL SLICES</span>
+                  <i class="fa fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section2">
+      <div class="container">
+        <div class="menu1">
+          <ul>
+            <li [ngClass]="{'selected':activeMenu1==1}" (click)="activeMenu1=1">
+              <span>Neighborhood</span>
+            </li>
+            <li [ngClass]="{'selected':activeMenu1==2}" (click)="activeMenu1=2">
+              <span>Property Evaluation</span>
+            </li>
+            <li [ngClass]="{'selected':activeMenu1==3}" (click)="activeMenu1=3">
+              <span>Accessibility</span>
+            </li>
+            <li [ngClass]="{'selected':activeMenu1==4}" (click)="activeMenu1=4">
+              <span>Anchor Tenants</span>
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="item item1" *ngIf="activeMenu1==1">
+            <div class="row">
+              <div class="col-sm-7">
+                <div class="left-content">
+                  <img src="assets/img/neighborhood_demo.png" />
+                </div>
+              </div>
+              <div class="col-sm-5">
+                <div class="right-content">
+                  <div class="header">
+                    <img src="assets/img/contact_icon.png" />
+                    <span>Poorvanchal Royal Apartments</span>
+                  </div>
+                  <div class="content">
+                    <ul>
+                      <li>
+                        <img src="assets/img/home_icon_2.png" />
+                        <span>108 Residential homes</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/people_icon.png" />
+                        <span>462 People Living</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/rent_icon.png" />
+                        <span>Rs 28 Lacs HH disposable Income</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/distance_icon.png" />
+                        <span>4.2 km from Mall Entrance</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/cake_icon.png" />
+                        <span>33 Years Median Population Age</span>
+                      </li>
+                      <li>
+                        <img src="assets/img/brain_icon.png" />
+                        <span>Young working class population</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="item item2" *ngIf="activeMenu1==2">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="left-content">
+                  <h2>Select City Walk</h2>
+                  <img src="assets/img/select_city.png" />
+                  <div class="img_container">
+                    <i class="fa fa-chevron-left"></i>
+                    <img class="selected" src="assets/img/select_city.png" />
+                    <img src="assets/img/select_city.png" />
+                    <img src="assets/img/select_city.png" />
+                    <img src="assets/img/select_city.png" />
+                    <img src="assets/img/select_city.png" />
+                    <i class="fa fa-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="right-content">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="tenant">
+                        <h3>Tenant Mix</h3>
+                        <div class="content">
+                          <div class="item">
+                            <img src="assets/img/apparel_icon.png" />
+                            <div class="text">
+                              <span class="number">43</span>
+                              <span class="item_name">Apparel Stores</span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="assets/img/entertainment_icon.png" />
+                            <div class="text">
+                              <span class="number">3</span>
+                              <span class="item_name">Entertainment Hubs</span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="assets/img/lifestyle_icon.png" />
+                            <div class="text">
+                              <span class="number">4</span>
+                              <span class="item_name">Lifestyle Stores</span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="assets/img/night_club_icon.png" />
+                            <div class="text">
+                              <span class="number">5</span>
+                              <span class="item_name">Night Clubs</span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="assets/img/restaurent_icon.png" />
+                            <div class="text">
+                              <span class="number">16</span>
+                              <span class="item_name">Restaurant</span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="assets/img/multiplex_icon.png" />
+                            <div class="text">
+                              <span class="number">8</span>
+                              <span class="item_name">Multiplex Screens</span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="assets/img/tech_store_icon.png" />
+                            <div class="text">
+                              <span class="number">11</span>
+                              <span class="item_name">Technology Stores</span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="assets/img/tech_store_icon.png" />
+                            <div class="text">
+                              <span class="number">3</span>
+                              <span class="item_name">Welness Centers</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="kubma">
+                        <h3>Kubma Ratings (10)</h3>
+                        <div class="content">
+                          <div class="item">
+                            <img src="assets/img/parking_icon.png" />
+                            <div class="text">
+                              <span class="number">7.3</span>
+                              <span class="item_name">Parking</span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="assets/img/management_icon.png" />
+                            <div class="text">
+                              <span class="number">8.3</span>
+                              <span class="item_name">Mall Management</span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="assets/img/tenant_mix_icon.png" />
+                            <div class="text">
+                              <span class="number">6.7</span>
+                              <span class="item_name">Tenant Mix</span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="assets/img/multiplex_icon.png" />
+                            <div class="text">
+                              <span class="number">5.3</span>
+                              <span class="item_name">Multiplex Experience</span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="assets/img/navigation_icon.png" />
+                            <div class="text">
+                              <span class="number">8.6</span>
+                              <span class="item_name">Mall Navigation</span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="assets/img/amenities_icon.png" />
+                            <div class="text">
+                              <span class="number">8.0</span>
+                              <span class="item_name">Amenities</span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="assets/img/food_icon.png" />
+                            <div class="text">
+                              <span class="number">7.1</span>
+                              <span class="item_name">Food Offering</span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <img src="assets/img/shopping_icon.png" />
+                            <div class="text">
+                              <span class="number">9.5</span>
+                              <span class="item_name">Shopping Experience</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item item3" *ngIf="activeMenu1==3">
+            <div class="row">
+              <div class="col-sm-5">
+                <div class="rating">
+                  <div class="header">
+                    <img src="assets/img/rating_icon.png" />
+                    <span>Overall Kubma Rating-</span>
+                    <span class="rating_number">8.8</span>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Select City Walk is located at posh locality in South delhi. It is a big entertainment hub which draws crowds from all over south delhi. It hosts high-end brands along with an eight screen multiplex. Roads connecting to the mall are broad but often cluttered with traffic at evenings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="nearby">
+                  <div class="header">
+                    <span>Nearby Areas - </span>
+                    <span class="rating_number">7.2</span>
+                  </div>
+                  <div class="content">
+                    <div class="item">
+                      <span>Vasant Kunj</span>
+                    </div>
+                    <div class="item">
+                      <span>Saket</span>
+                    </div>
+                    <div class="item">
+                      <span>Malviya Nagar</span>
+                    </div>
+                    <div class="item">
+                      <span>Hauz Khas</span>
+                    </div>
+                    <div class="item">
+                      <span>Green Park</span>
+                    </div>
+                    <div class="item">
+                      <span>Greater Kailash</span>
+                    </div>
+                    <div class="item">
+                      <span>Lajpat Nagar</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="traffic">
+                  <div class="header">
+                    <span>Traffic - </span>
+                    <span class="rating_number">8.2</span>
+                  </div>
+                  <div class="content">
+                    <p>
+                      Moderate to Heavy traffic on roads connecting to mall within 5 km radius
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="footer">
+                  <div class="head">
+                    <img src="assets/img/distance_icon.png" />
+                    <span>Connectivity</span>
+                  </div>
+                  <div class="content">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="header">
+                          <span>Metro - </span>
+                          <span class="rating_number">7.7</span>
+                        </div>
+                        <div class="inner_content">
+                          <ul>
+                            <li>
+                              - 2.3 Kms from Saket Station
+                            </li>
+                            <li>
+                              - 5 Stations away from Rajiv Chowk
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="header">
+                          <span>Bus - </span>
+                          <span class="rating_number">8.6</span>
+                        </div>
+                        <div class="inner_content">
+                          <ul>
+                            <li>
+                              - 200 meters walk from Haus Rani bus stop
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="header">
+                          <span>Road - </span>
+                          <span class="rating_number">8.3</span>
+                        </div>
+                        <div class="inner_content">
+                          <ul>
+                            <li>
+                               - Well maintained six lane connecting roads
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item item4" *ngIf="activeMenu1==4">
+            <div class="content">
+              <img src="assets/img/brand_demo/brand_demo{{i}}.png" *ngFor="let i of [1,2,3,4,5,6,7,8,9,11,12,13,14,15]"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section3">
+      <div class="container">
+        <div class="col-sm-3">
+          <div class="menu2">
+            <div [ngClass]="{'selected':activeMenu2==1}" class="menu-item" (click)="activeMenu2=1">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <span>Summary</span>
+            </div>
+            <div [ngClass]="{'selected':activeMenu2==2}" class="menu-item" (click)="activeMenu2=2">
+              <i class="fa fa-money" aria-hidden="true"></i>
+              <span>Monthly Distributions</span>
+            </div>
+            <div [ngClass]="{'selected':activeMenu2==3}" class="menu-item" (click)="activeMenu2=3">
+              <i class="fa fa-line-chart" aria-hidden="true"></i>
+              <span>Capital Returns</span>
+            </div>
+            <div [ngClass]="{'selected':activeMenu2==4}" class="menu-item" (click)="activeMenu2=4">
+              <i class="fa fa-sticky-note" aria-hidden="true"></i>
+              <span>Details</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="summary" *ngIf="activeMenu2==1">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="investment">
+                  <div class="header">
+                    <span>Investment Info</span>
+                  </div>
+                  <div class="content">
+                    <div class="inner1">
+                      <i class="fa fa-money" aria-hidden="true"></i>
+                      <span>Rental Distribution Info</span>
+                    </div>
+                    <hr />
+                    <div class="inner2">
+                      <span>Net Rental Yield</span>
+                      <span class="number">5.18%</span>
+                    </div>
+                    <hr class="darker"/>
+                    <div class="inner3">
+                      <i class="fa fa-line-chart" aria-hidden="true"></i>
+                      <span>Capital Return Info</span>
+                    </div>
+                    <div class="inner4">
+                      <span>Historical Capital Growth*</span>
+                      <span class="number">7.26%</span>
+                    </div>
+                    <hr />
+                    <div class="inner5">
+                      <small>* Past performance dosen't indicate future performance</small><br />
+                      <small>Neither income nor capital gains are guranteed</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="settlement">
+                  <div class="header">
+                    <span>Settlement Date : 19th May 2016</span>
+                  </div>
+                  <div class="content">
+                    <div class="item">
+                      <span>Property Value</span>
+                      <span class="number">Rs. 96,54,786</span>
+                    </div>
+                    <div class="item block">
+                      <span>Additional Costs</span>
+                      <div class="inner-item">
+                        <span>- Stamp Duty</span>
+                        <span class="number">Rs 5,62,789</span>
+                      </div>
+                      <div class="inner-item">
+                        <span>- Transfer Charges</span>
+                        <span class="number">Rs 78,234</span>
+                      </div>
+                      <div class="inner-item">
+                        <span>- Brokerage</span>
+                        <span class="number">Rs 76,236</span>
+                      </div>
+                      <div class="inner-item">
+                        <span>- Legal Fees</span>
+                        <span class="number">Rs 5,400</span>
+                      </div>
+                    </div>
+                    <hr />
+                    <div class="total">
+                      <span>Total Purchase cost</span>
+                      <span class="total_cost">Rs 1,03,77,445</span>
+                    </div>
+                    <hr class="darker"/>
+                    <div class="item">
+                      <span>Initial Brick Price</span>
+                      <span class="number">Rs. 1,037</span>
+                    </div>
+                    <div class="item">
+                      <span>Initial Brick Price</span>
+                      <span class="number">Rs. 1,037</span>
+                    </div>
+                    <div class="item">
+                      <span>Slice Valuation<br />
+                      <small>(as of Apr 2018)</small></span>
+                      <span class="number">Rs. 1,187</span>
+                    </div>
+                    <div class="item">
+                      <span>Annual Appreciation</span>
+                      <span class="number">7.8%</span>
+                    </div>
+                    <div class="item">
+                      <small>Next Valuation Date</small>
+                      <small>December 2018</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="prices">
+                  <div class="header">
+                    <span>Invest in AT602</span>
+                  </div>
+                  <div class="content">
+                    <div class="inner1">
+                      <span>Lowest Available Slice Price</span><br />
+                      <span class="number">Rs 1206/-</span><small> (1.17% Above Valuation)</small>
+                    </div>
+                    <div class="inner2">
+                      <span>Net Annual Yield<br /><small>Rental + Appreciation</small></span>
+                      <span class="number">12.98%</span>
+                    </div>
+                    <div class="inner3">
+                      <div class="button pink" [routerLink]="['/buy']">
+                        <span>BUY SLICES</span>
+                      </div>
+                      <div class="button purple" [routerLink]="['/sell']">
+                        <span>SELL SLICES</span>
+                      </div>
+                    </div>
+                    <small>237 slices transacted in last 30 days</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="distribution" *ngIf="activeMenu2==2">
+            <div class="row">
+              <div class="col-sm-5">
+                <div class="table">
+                  <div class="header">
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                    <span>Monthly Distribution</span>
+                  </div>
+                  <div class="content">
+                    <div class="item">
+                      <span>Rent Per Month</span>
+                      <span class="number">Rs 53,564</span>
+                    </div>
+                    <div class="item">
+                      <span>Gross Rental Income</span>
+                      <span class="number">Rs 6,42,768</span>
+                    </div>
+                    <hr />
+                    <div class="item">
+                      <span>Net Rental Income</span>
+                      <span class="number">Rs 5,14,214</span>
+                    </div>
+                    <div class="item">
+                      <span>Est. Gross Rental Yield</span>
+                      <span class="number">6.19%</span>
+                    </div>
+                    <div class="item">
+                      <span>Est. Net Rental Yield</span>
+                      <span class="number">4.95%</span>
+                    </div>
+                    <hr />
+                    <div class="footer">
+                      <small>* Past performance dosen't indicate future performance</small><br />
+                      <small>Neither income nor capital gains are guranteed</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <div class="right-content">
+                  <h2>Cash Flow Breakdown</h2>
+                  <img src="assets/img/cash_flow_demo.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="returns" *ngIf="activeMenu2==3">
+            <div class="row">
+              <div class="col-sm-5">
+                <div class="table">
+                  <div class="header">
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    <span>Capital Returns</span>
+                  </div>
+                  <div class="content">
+                    <h4>Key Matrics</h4>
+                    <hr />
+                    <div class="item">
+                      <span>Initial Brick Price</span>
+                      <span class="number">Rs 1037</span>
+                    </div>
+                    <select>
+                      <option>
+                        10 yr
+                      </option>
+                    </select>
+                    <div class="item">
+                      <span>Gross Rental Income</span>
+                      <span class="number">Rs 6,42,768</span>
+                    </div>
+                    <hr />
+                    <div class="item">
+                      <span>Historical Capital Growth*</span>
+                      <span class="number">7.26%</span>
+                    </div>
+                    <hr />
+                    <div class="footer">
+                      <small>* Past performance dosen't indicate future performance</small><br />
+                      <small>Neither income nor capital gains are guranteed</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <div class="right-content">
+                  <h2>Historica Median Price - Commercial Properties</h2>
+                  <img src="assets/img/returns_demo.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="details" *ngIf="activeMenu2==4">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="video-container">
+                  <h2>Investment Case Video</h2>
+                  <div class="video-inner">
+                    <img src="assets/img/video_demo.png" />
+                  </div>
+                  <div class="footer">
+                    <div class="item">
+                      <img src="assets/img/tenant_mix_icon.png" />
+                      <span>About Tenant</span>
+                    </div>
+                    <div class="item">
+                      <img src="assets/img/builder_icon.png" />
+                      <span>About Builder</span>
+                    </div>
+                    <div class="item">
+                      <img src="assets/img/pdf_icon.png" />
+                      <span>Property Report</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="monthly_update">
+                  <h2>Monthly Update</h2>
+                  <p>
+                    The property was leased from the 23rd April 2018 for Rs 25,500 per week, with the intention for the first distribution to be paid for the month ending May 2018.This property was acquired on the 15th March 2018 for Rs 1.639 Cr, with no debt. Platform Settlement is scheduled for the 13th April 2018. The Initial Slice Price is Rs 1639.The first independent valuation of this property is due in Dec 2018 and will be subsequently published on this page.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br /><br />
+</div>

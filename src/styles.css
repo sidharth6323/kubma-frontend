@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+/*global*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .container-fluid
+  {
+    margin: 0 auto;
+    padding: 0;
+  
+  }
+
+  body{
+    font-family: "Ubuntu",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    overflow-x: hidden;
+  }
+
+  .btn-primary {
+    background-color: #065bc4;
+  }
+
+  .btn-primary:hover{
+    background-color: rgb(65, 77, 248);
+  }
+
+  .btn-secondry {
+    background-color: rgb(20, 43, 92);
+  }
+
+  .btn-success {
+    background-color: #00209e;
+  }
+
+  .form-control {
+    border: 1px solid #3387f8;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .panel-primary>.panel-heading{
+    background-color: #065bc4;
+  }
+
+  .alert-danger {
+    color: #f31f00;
+    background-color: #f4e6e647;
+    border-color: #caa0a7;
+  }
+
+  .form-control {
+    border: 1px solid #286090;
+  }
+

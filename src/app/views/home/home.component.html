@@ -1,0 +1,79 @@
+<div class="home-container">
+  <ngx-loading-bar></ngx-loading-bar>
+  <div class="section1">
+    <div class="container">
+      <div class="search-container">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search for a Property, Location or Builder"/>
+      </div>
+      <div class="property-container">
+        <div class="property">
+          <span class="header">Apparel Store</span>
+          <img class="prop_img" src="assets/img/apparel_demo.png" />
+          <span class="address">Select City Walk, New Delhi</span>
+        </div>
+        <div class="property">
+          <span class="header">Office Space</span>
+          <img class="prop_img" src="assets/img/office_demo.png" />
+          <span class="address">DLF Cyber City, Gurugram</span>
+        </div>
+        <div class="property">
+          <span class="header">Restaurant</span>
+          <img class="prop_img" src="assets/img/restaurent_demo.png" />
+          <span class="address">DLF Promenade, New Delhi</span>
+        </div>
+        <div class="property">
+          <span class="header">Wellness Center</span>
+          <img class="prop_img" src="assets/img/wellness_demo.png" />
+          <span class="address">Mall of India, Kolkata</span>
+        </div>
+      </div>
+      <div class="btn-container">
+        <div class="button learn_btn">
+          <span>Learn More</span>
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="map-section">
+        <div class="map-container">
+          <img src="assets/img/india_map.png" />
+        </div>
+        <div class="text-container">
+          <div class="text">
+            <h2>There’s 26 Billion USD worth of Real Estate coming up in India in 2018 itself.</h2>
+            <p>
+              But where to start ?
+            </p>
+            <p>
+              We filter out the noise and bring you the highest yielding commercial properties.
+            </p>
+          </div>
+          <div class="btn-container">
+            <div class="button">
+              <span>Sign up</span>
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-2">
+    <div class="container">
+      <div class="section-header">
+        <span>Our Functioning</span>
+      </div>
+      <div class="section-content">
+        <div class="main-img">
+          <img src="assets/img/function_main.png" />
+        </div>
+        <div class="function_container">
+          <div class="function" *ngFor="let i of [1,2,3,4]">
+            <img src="assets/img/function_{{i}}.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div>
