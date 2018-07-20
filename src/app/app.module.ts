@@ -34,6 +34,7 @@ import { CapitalizePipe } from './pipes/capitalize.pipe';
     Checkout_BuyComponent,
     Checkout_SellComponent,
     SellComponent,
+    CapitalizePipe,
   ],
   imports: [
     BrowserModule,
