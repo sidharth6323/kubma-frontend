@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve --host=0.0.0.0",
     "build":"ng build",
-    "build-prod": "ng build --prod --base-href 'https://sidharth6323.github.io/kubma-frontend/'",
+    "build-prod": "ng build --prod --base-href 'http://kubma.com/'",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
