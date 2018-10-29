@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { AgmCoreModule } from '@agm/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { Ng5SliderModule } from 'ng5-slider';
 
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
@@ -43,6 +43,7 @@ import { CapitalizePipe } from './pipes/capitalize.pipe';
     LoadingBarHttpClientModule,
     NgbModule.forRoot(),
     NgxPaginationModule,
+    Ng5SliderModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
       {path: 'listing', component: ListingComponent},

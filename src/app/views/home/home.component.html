@@ -2,36 +2,38 @@
 <div class="home-container">
   <ngx-loading-bar></ngx-loading-bar>
   <div class="section1">
-    <div class="tagline">
-      <h2></h2>
-    </div>
-    <div class="search-container">
-      <div class="input-container">
-        <input type="text" placeholder="Search for a Property, Location or Builder"/>
-        <i class="fa fa-search"></i>
-      </div>
-    </div>
-    <div class="card-container">
-      <div class="card">
-        <img src="assets/img/apparel_icon_main.png" />
-        <span>Apparel Store</span>
-      </div>
-      <div class="card">
-        <img src="assets/img/office_space_icon.png" />
-        <span>Office Space</span>
-      </div>
-      <div class="card">
-        <img src="assets/img/restaurant_icon_main.png" />
-        <span>Restaurant</span>
-      </div>
-      <div class="card">
-        <img src="assets/img/wellness_centre_icon.png" />
-        <span>Wellness Centre</span>
-      </div>
-      <div class="card">
-        <img src="assets/img/more_icon.png" />
-        <span>More..</span>
-      </div>
+    <div class="container">
+        <div class="tagline">
+            <h2>Simple, Safest & Fastest</h2>
+            <small>Buying properties has never been easier</small>
+          </div>
+          <div class="search-container">
+            <div class="item">
+              <div class="item-inner select">
+              <div class="form-group">
+                  <select class="form-control" id="PropertyType">
+                    <option>PropertyType</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="item-inner locality">
+                <input type="text" placeholder="Enter Locality"/>  
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-inner budget">
+                  <span>Budget</span>
+                  <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider>
+              </div>
+              <div class="item-inner">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+          </div>
     </div>
   </div>
   <div class="map-section">
