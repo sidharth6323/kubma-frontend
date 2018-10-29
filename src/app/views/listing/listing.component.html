@@ -10,13 +10,13 @@
         <div class="col-sm-7">
           <div class="right-section">
             <span class="sort-head">SORT BY:</span>
-            <div class="sort selected">
+            <div class="sort" [ngClass]="{'selected':activeSort=='price'}" (click)="activeSort='price'">
               <span>Slice Price</span>
             </div>
-            <div class="sort">
+            <div class="sort" [ngClass]="{'selected':activeSort=='rent'}" (click)="activeSort='rent'">
               <span>Rental Yield</span>
             </div>
-            <div class="sort">
+            <div class="sort" [ngClass]="{'selected':activeSort=='gain'}" (click)="activeSort='gain'">
               <span>Capital Gain</span>
             </div>
           </div>

@@ -10,10 +10,27 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Sacramento|Work+Sans|Zilla+Slab:300,400|Oswald" rel="stylesheet">
 </head>
-<body>
+<body onload="hideLoading()">
+  <div class="loading-container" id="loading">
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+    <span>Kubma</span>
+  </div>
   <app-root></app-root>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+<script>
+  function hideLoading(){
+    document.getElementById('loading').style.opacity=0;
+    setTimeout(function(){
+      document.getElementById('loading').style.display='none';
+    },500)
+  }
+</script>
 </html>

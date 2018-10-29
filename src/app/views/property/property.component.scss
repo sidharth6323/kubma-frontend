@@ -2,6 +2,11 @@
     width: 95%!important;
     margin: 0 auto;
 }
+@keyframes fadeIn
+{
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
 .property-container
 {
   background: #f7f7f7;
@@ -249,6 +254,9 @@
         padding-bottom: 2%;
         .item
         {
+          animation-name: fadeIn;
+          animation-duration: 0.5s;
+          animation-iteration-count: 1;
           &.item1
           {
             .left-content
@@ -463,6 +471,9 @@
       {
         padding-left: 3%;
         min-height: 390px;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
         .investment
         {
           border:1px solid #ddd;
@@ -637,6 +648,9 @@
       {
         padding-left: 3%;
         min-height: 390px;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
         .table{
           border:1px solid #ddd;
           padding-bottom: 2%;
@@ -691,6 +705,9 @@
       {
         padding-left: 3%;
         min-height: 390px;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
         .table{
           border:1px solid #ddd;
           padding-bottom: 2%;
@@ -753,6 +770,9 @@
       {
         padding-left: 3%;
         min-height: 390px;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        animation-iteration-count: 1;
         .video-container
         {
           font-family: 'Oswald', sans-serif;

@@ -10,7 +10,7 @@ export class ListingComponent implements OnInit {
   constructor() {
 
   }
-
+  activeSort='price';
   ngOnInit() {
   }
 

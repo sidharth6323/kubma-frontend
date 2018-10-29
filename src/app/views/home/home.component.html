@@ -1,57 +1,60 @@
+
 <div class="home-container">
   <ngx-loading-bar></ngx-loading-bar>
   <div class="section1">
-    <div class="container">
-      <div class="search-container">
-        <i class="fa fa-search"></i>
+    <div class="tagline">
+      <h2></h2>
+    </div>
+    <div class="search-container">
+      <div class="input-container">
         <input type="text" placeholder="Search for a Property, Location or Builder"/>
+        <i class="fa fa-search"></i>
       </div>
-      <div class="property-container">
-        <div class="property">
-          <span class="header">Apparel Store</span>
-          <img class="prop_img" src="assets/img/apparel_demo.png" />
-          <span class="address">Select City Walk, New Delhi</span>
-        </div>
-        <div class="property">
-          <span class="header">Office Space</span>
-          <img class="prop_img" src="assets/img/office_demo.png" />
-          <span class="address">DLF Cyber City, Gurugram</span>
-        </div>
-        <div class="property">
-          <span class="header">Restaurant</span>
-          <img class="prop_img" src="assets/img/restaurent_demo.png" />
-          <span class="address">DLF Promenade, New Delhi</span>
-        </div>
-        <div class="property">
-          <span class="header">Wellness Center</span>
-          <img class="prop_img" src="assets/img/wellness_demo.png" />
-          <span class="address">Mall of India, Kolkata</span>
-        </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img src="assets/img/apparel_icon_main.png" />
+        <span>Apparel Store</span>
       </div>
-      <div class="btn-container">
-        <div class="button learn_btn">
-          <span>Learn More</span>
-          <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </div>
+      <div class="card">
+        <img src="assets/img/office_space_icon.png" />
+        <span>Office Space</span>
       </div>
-      <div class="map-section">
-        <div class="map-container">
-          <img src="assets/img/india_map.png" />
+      <div class="card">
+        <img src="assets/img/restaurant_icon_main.png" />
+        <span>Restaurant</span>
+      </div>
+      <div class="card">
+        <img src="assets/img/wellness_centre_icon.png" />
+        <span>Wellness Centre</span>
+      </div>
+      <div class="card">
+        <img src="assets/img/more_icon.png" />
+        <span>More..</span>
+      </div>
+    </div>
+  </div>
+  <div class="map-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 left-section">
+            <img src="assets/img/video_player_main_demo.png" />
         </div>
-        <div class="text-container">
-          <div class="text">
-            <h2>There’s 26 Billion USD worth of Real Estate coming up in India in 2018 itself.</h2>
-            <p>
-              But where to start ?
-            </p>
-            <p>
-              We filter out the noise and bring you the highest yielding commercial properties.
-            </p>
-          </div>
-          <div class="btn-container">
-            <div class="button">
-              <span>Sign up</span>
-              <i class="fa fa-user-plus" aria-hidden="true"></i>
+        <div class="col-sm-7 right-section">
+          <h1>There’s 26 Billion USD worth of Real Estate coming up in India in 2018 itself.</h1>
+          <h2>But where to start ?</h2>
+          <div class="row">
+            <div class="col-sm-5">
+              <h3>We filter out the noise and bring you the highest yielding commercial properties. </h3>
+              <div class="button-container">
+                <div class="button">
+                  <i class="fa fa-user-plus"></i>
+                  <span>Sign up</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <img src="assets/img/india_map.png" class="map" />
             </div>
           </div>
         </div>
@@ -61,6 +64,7 @@
   <div class="section-2">
     <div class="container">
       <div class="section-header">
+        <i class="fa fa-cogs"></i>
         <span>Our Functioning</span>
       </div>
       <div class="section-content">
@@ -75,5 +79,156 @@
       </div>
     </div>
   </div>
-  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <div class="section-3">
+    <div class="container">
+      <div class="header">
+        <img src="assets/img/location_icon.png" />
+        <span>Properties near you</span>
+      </div>
+      <div class="content">
+        <div class="card">
+          <div class="card-header">
+            <span>DLF Promenade</span>
+          </div>
+          <div class="card-content">
+            <img src="assets/img/restaurent_demo.png" class="property" />
+            <div class="right-column">
+              <div class="item">
+                <div class="left">
+                  <img src="assets/img/rent_icon.png" />
+                  <span>Rental</span>
+                </div>
+                <div class="right">
+                  7.34 %
+                </div>
+              </div>
+              <div class="item">
+                <div class="left">
+                  <img src="assets/img/gain_icon.png" />
+                  <span>Historical Capital Gain</span>
+                </div>
+                <div class="right">
+                  5.24 %
+                </div>
+              </div>
+              <div class="item">
+                <div class="left">
+                  <img src="assets/img/slice_icon.png" />
+                  <span>Slice</span>
+                </div>
+                <div class="right">
+                  Rs 1247
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="left">
+              <img src="assets/img/food_icon.png" />
+              <span>Pizza Square</span>
+            </div>
+            <div class="right">
+              <span>Restaurant in Food Court</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-header">
+            <span>Connaught Place</span>
+          </div>
+          <div class="card-content">
+            <img src="assets/img/office_demo.png" class="property" />
+            <div class="right-column">
+              <div class="item">
+                <div class="left">
+                  <img src="assets/img/rent_icon.png" />
+                  <span>Rental</span>
+                </div>
+                <div class="right">
+                  7.34 %
+                </div>
+              </div>
+              <div class="item">
+                <div class="left">
+                  <img src="assets/img/gain_icon.png" />
+                  <span>Historical Capital Gain</span>
+                </div>
+                <div class="right">
+                  5.24 %
+                </div>
+              </div>
+              <div class="item">
+                <div class="left">
+                  <img src="assets/img/slice_icon.png" />
+                  <span>Slice</span>
+                </div>
+                <div class="right">
+                  Rs 1247
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="left">
+              <img src="assets/img/tech_store_icon.png" />
+              <span>Apple Store</span>
+            </div>
+            <div class="right">
+              <span>Tech Store in K Block</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span>DLF Promenade</span>
+          </div>
+          <div class="card-content">
+            <img src="assets/img/restaurent_demo.png" class="property" />
+            <div class="right-column">
+              <div class="item">
+                <div class="left">
+                  <img src="assets/img/rent_icon.png" />
+                  <span>Rental</span>
+                </div>
+                <div class="right">
+                  7.34 %
+                </div>
+              </div>
+              <div class="item">
+                <div class="left">
+                  <img src="assets/img/gain_icon.png" />
+                  <span>Historical Capital Gain</span>
+                </div>
+                <div class="right">
+                  5.24 %
+                </div>
+              </div>
+              <div class="item">
+                <div class="left">
+                  <img src="assets/img/slice_icon.png" />
+                  <span>Slice</span>
+                </div>
+                <div class="right">
+                  Rs 1247
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="left">
+              <img src="assets/img/food_icon.png" />
+              <span>Pizza Square</span>
+            </div>
+            <div class="right">
+              <span>Restaurant in Food Court</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br /><br />
 </div>
