@@ -8,32 +8,70 @@
             <small>Buying properties has never been easier</small>
           </div>
           <div class="search-container">
-            <div class="item">
-              <div class="item-inner select">
-              <div class="form-group">
-                  <select class="form-control" id="PropertyType">
-                    <option>PropertyType</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
+            <div class="select">
+                <div class="form-group">
+                    <select class="form-control">
+                      <option>Property Type</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
                 </div>
-              </div>
-              <div class="item-inner locality">
-                <input type="text" placeholder="Enter Locality"/>  
-              </div>
             </div>
-            <div class="item">
-              <div class="item-inner budget">
-                  <span>Budget</span>
-                  <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options"></ng5-slider>
-              </div>
-              <div class="item-inner">
-                <i class="fa fa-search"></i>
-              </div>
+            <div class="input">
+                <div class="input-container">
+                    <input type="text" placeholder="Enter Locality"/>
+                    <i class="fa fa-search"></i>
+                </div>
             </div>
           </div>
+    </div>
+  </div>
+  <div class="essentials-section">
+    <div class="container">
+      <div class="essentials-main">
+          <img src="assets/img/logo.png" class="logo"  [routerLink]="['/']"/>
+          <span>essentials</span>
+          <br>
+          <p>For all properties</p>
+      </div>
+      <div class="items-container">
+        <div class="item">
+          <div class="image-container">
+            <img src="assets/img/essential-1.png" />
+          </div>
+          <span>Complete & authentic
+              property papers</span>
+        </div>
+        <div class="item">
+          <div class="image-container">
+            <img src="assets/img/essential-2.png" />
+          </div>
+          <span>3D Virtual tours</span>
+        </div>
+        <div class="item">
+          <div class="image-container">
+            <img src="assets/img/essential-3.png" />
+          </div>
+          <span>Aggregated Services 
+              for housing needs</span>
+        </div>
+        <div class="item">
+          <div class="image-container">
+            <img src="assets/img/essential-4.png" />
+          </div>
+          <span>Transparent unbiased
+              Information</span>
+        </div>
+        <div class="item">
+          <div class="image-container">
+            <img src="assets/img/essential-5.png" />
+          </div>
+          <span>Complete Transaction
+              Safety</span>
+        </div>
+      </div>
     </div>
   </div>
   <div class="map-section">

@@ -41,35 +41,34 @@
     .search-container
     {
       background: rgba(255,255,255,0.9);
-      padding: 1%;
       width: 40%;
+      display: flex;
+      align-items: center;
+      padding: 0 1%;
       .form-group{margin: 0;}
-      .item{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 5% 0;
-        .item-inner{
-          &.select{
-            width: 46%
-          }
-          &.locality{
-            width: 52%;
-          }
-          &.budget{
-            text-align: left;
-            width:90%;
-          }
+      .select{
+        width: 30%;
+        select{
+          background: none;
+          border: none;
+          box-shadow: none;
         }
       }
-      input
-      {
-        width: 90%;
-        border:none;
-        background: none;
-        &:focus
+      .input{
+        width: 70%;
+        border-left: 1px solid #ddd;
+        margin-left: 4%;
+        padding-left: 4%;
+        input
         {
-          //background: rgba(255,255,255,1);
+          padding: 5% 0;
+          width:94%;
+          border:none;
+          background: none;
+          &:focus
+          {
+            //background: rgba(255,255,255,1);
+          }
         }
       }
     }
@@ -100,6 +99,50 @@
         &:hover
         {
           box-shadow:10px 14px 62px 5px rgba(163, 174, 184, 0.8);
+        }
+      }
+    }
+  }
+  .essentials-section{
+    border:1px solid #efefef;
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .essentials-main
+      {
+        display:flex;
+        align-items: center;
+       img{
+
+        margin-right: 2%;
+       } 
+       span{
+         font-size: 1.4em;
+       }
+      }
+      .items-container{
+        padding-bottom: 2%;
+        display: flex;
+        border-left:2px solid #efefef;
+        align-items: center;
+        justify-content: space-around;
+        .item{
+          flex:1;
+          text-align:center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 0.95em;
+          margin: 0 1%;
+          .image-container{
+            display: flex;
+            align-items: center;
+            height: 100px;
+            img{
+              transform: scale(0.8);
+            }
+          }
         }
       }
     }
